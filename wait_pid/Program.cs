@@ -16,10 +16,10 @@ namespace wait_pid
             {
                 if (!int.TryParse(args[i], out pid[i]))
                 {
-                    throw (new Exception("INVALIDE PARAMETER DOES'NT SEEM TO BE A INTEGER => " + args[i]));
+                    throw (new Exception("INVALIDE PARAMETER DOESN'T SEEM TO BE A INTEGER => " + args[i]));
                 }
                 if(pid[i] <= 0)
-                    throw (new Exception("INVALIDE PARAMETER DOES'NT SEEM TO BE A GREATER THAN 0 PID=> " + args[i]));
+                    throw (new Exception("INVALIDE PARAMETER DOESN'T SEEM TO BE A GREATER THAN 0 PID=> " + args[i]));
             }
             Process p;
             for (int i = pid.Length; i-- > 0;)
